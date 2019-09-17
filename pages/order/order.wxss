@@ -1,0 +1,134 @@
+/* pages/order/order.wxss */
+page {
+  background-color: #f2f2f2;
+}
+.orderCard{
+    display: flex;
+  flex-direction: column;
+  padding: 20rpx 20rpx;
+ 
+  margin: 20rpx;
+  background: #ffffff
+ 
+}
+.a{
+    background-color: #f2f2f2;
+  height: 1034rpx;
+  display: flex;
+  flex-direction: column;
+  
+   align-items: center;
+}
+.aa{
+  height: 30rpx;
+  margin-top: 30rpx;
+  color: #999999;
+  text-align: center
+}
+.aaa{
+  height: 300rpx;
+  display: inline-block
+}
+.avatar{
+  margin-top: 200rpx;
+  width: 282rpx;
+  height: 298rpx
+}
+.container {
+  background-color: #f2f2f2;
+  height: 1034rpx;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling : touch;
+}
+.orderTop{
+    display: flex;
+  flex-direction:row;
+  border-bottom: 1px solid rgb(223, 219, 219);
+  padding-bottom: 20rpx;
+  font-size: 30rpx
+}
+.orderTopL{
+flex: 4
+}
+.orderTopM{
+  flex: 2
+}
+.orderTopR{
+  flex: 2.3
+}
+.bgLoginContent{
+  width:40%;
+  text-align: right;margin-top: 0rpx;
+  
+}
+.orderContent{
+  display: flex;
+  flex-direction:row;
+  margin-top: 16rpx
+}
+.orderContent1{
+  flex: 1
+}
+.orderContent2{
+  flex: 2;
+  color: #333333;
+  font-family: PingFangSC-Regular
+}
+.orderBottom{
+   display: flex;
+    justify-content:space-between;
+    margin-top: 20rpx
+  
+  
+}
+.orderBottomL{
+line-height: 50rpx
+}
+.colorW{
+color: #0132FE
+}
+.colorWs{
+  color:#44C31C
+}
+.bgLogin{
+   color: #999999 !important;
+height: 70rpx!important;
+width: 80%!important;
+background:  #ebf1ee !important;
+line-height: 70rpx!important;
+border: 1px solid #a9aaa9!important;
+border-radius: 52rpx!important;
+font-size: 26rpx!important;
+}
+.bgLoginGo{
+   color: #fff !important;
+height: 70rpx!important;
+width: 80%!important;
+background:  #3247CD !important;
+line-height: 70rpx!important;
+border: 1px solid #a9aaa9!important;
+border-radius: 52rpx!important;
+font-size: 26rpx!important;
+}
+.goService{
+  
+  width:100%;
+  text-align: center;margin-top: 0rpx;
+  margin: 20rpx
+  
+
+}
+
+.goServiceBtn{
+  color: #fff !important;
+height: 88rpx!important;
+width: calc(100% - 40rpx)!important;
+
+margin: 20rpx;
+background:  #3247CD!important;
+line-height: 88rpx!important;
+border: 1px solid #3247CD!important;
+border-radius: 10rpx!important;
+font-size: 18px!important;
+font-family: "Arial Normal", "Arial"
+}

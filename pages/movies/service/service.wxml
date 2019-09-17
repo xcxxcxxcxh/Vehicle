@@ -1,0 +1,17 @@
+<!--pages/movies/service/service.wxml-->
+<view class="tit">请咨询您的服务顾问后输入经销商代码</view>
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" use-action-slot bind:search="onSearch" bind:change="ch">
+  <view slot="action" bind:tap="onSearch" >搜索</view>
+</van-search>
+<block wx:for="{{serviceList}}">
+<view class="serviceCard">
+  <view class="im">
+    <image src="{{item.avatarUrl}}" class="serviceImage"></image>
+  </view>
+  <view class="content">
+  <view class="contentItem">姓名：      {{item.realName}}</view>
+  <view class="contentItem">服务经验：      {{item.workStart}}年</view>
+  <view class="contentItem">联系方式：      {{item.phone}}</view>
+  <view  class="bgLoginContent"><van-button type="default" size="small" catchtap="opServer" custom-class='bgLogin' data-id="{{item.id}}" bindtap="opServer" >选择他/她为我的服务顾问</van-button></view>
+  </view>
+</view></block><van-dialog id="van-dialog" show-cancel-button='{{isCansle}}'/>

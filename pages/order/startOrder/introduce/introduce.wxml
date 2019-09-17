@@ -1,0 +1,54 @@
+<!--pages/order/startOrder/introduce/introduce.wxml-->
+<picker  disabled='{{is}}' bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+    <van-cell title="请选择意向车型  " custom-class="w" bindtap="op"  is-link value='{{type}}'>
+  <van-icon slot="right-icon" name="search" class="custom-icon" />
+</van-cell>
+     
+    </view>
+  </picker>
+<view class="words">请填写您朋友的联系方式</view>
+<view class="phoneContent">
+<van-cell-group>
+<van-field
+    value="{{ code }}"
+    center
+    clearable
+  
+    label=""
+    placeholder="请输入您朋友的真实姓名"
+   bind:change="onChange"
+    use-button-slot
+  >
+    
+  </van-field>
+  <van-field
+    value="{{ sms }}"
+    center
+    clearable
+    label=""
+    type="number"
+    placeholder="请输入手机号"
+    bind:change="onChangePh"
+    use-button-slot
+  >
+   
+  </van-field>
+  
+</van-cell-group></view>
+<view class="commitOrder">
+<view class="word">请确认您的服务订单信息</view>
+<view class="commitInfo">
+<view class="commitInfoL">
+<text class="word">姓名：</text><text class="word">手机号码：</text><text class="word">服务顾问：</text><text class="word">顾问手机号码：</text>
+</view>
+<view class="commitInfoR">
+<text class="word">{{name}}</text><text class="word">{{phone}}</text><text class="word">{{saName}}</text><text class="word">{{saPhone}}</text>
+</view>
+</view>
+
+
+</view>
+<view class="comitBtn">
+<van-button type="default" size="small" catchtap="goIntroduce" custom-class="goServiceBtn">我要介绍朋友购车</van-button></view>
+<van-dialog id="van-dialog" />

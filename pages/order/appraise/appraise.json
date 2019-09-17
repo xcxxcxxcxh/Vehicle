@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "multiple-rate": "/dist/multiple-rate/multiple-rate"
+  }
+}

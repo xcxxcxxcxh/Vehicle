@@ -1,0 +1,46 @@
+<!--pages/order/appraise/accomplish/accomplish.wxml-->
+<!-- <view class="orderCard" data-detail="{{item}}" bindtap="goDetail">
+  <view class="orderTop">
+    您的意见很重要！
+
+  </view>
+  <view class="orderContent">
+   非常感谢
+  </view>
+
+
+</view>
+<view class="orderCard" data-detail="{{item}}" bindtap="goDetail">
+  <view class="orderTopM">
+    您的意见很重要！
+
+  </view>
+  <view class="orderContentM">
+   非常感谢
+  </view>
+
+
+</view>
+<view class="orderCard" data-detail="{{item}}" bindtap="goDetail">
+  <view class="orderTopMM">
+    您可在“身边”领取您的本次奖励
+
+  </view>
+  <view class="orderContentMM">
+   长按二维码，打开身边小程序
+  </view>
+  <view class="orderBottom">
+     <image class="img" src="/images/wx.png"></image>
+    </view>
+
+</view> -->
+<view class="c">
+
+<image class="f" show-menu-by-longpress="true" src="/images/fi.png"></image>
+<view class="or">
+
+
+<view class="ors" bindtap="go">返回查看订单</view> 
+
+</view>
+</view>

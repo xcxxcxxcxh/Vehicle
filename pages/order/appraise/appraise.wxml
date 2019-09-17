@@ -1,0 +1,234 @@
+<!--pages/order/appraise/appraise.wxml-->
+
+<!-- <block wx:for="{{serverlist}}">
+  <view class="serverCard" data-detail="{{item}}" bindtap="goDetail">
+    <image src="/images/wx.png" class="img"></image>
+    <view class="bt">
+      <view class="bts">{{item.adviserRealName}}</view>
+      <view class="bts1">{{item.positionName}}</view>
+    </view>
+
+  </view>
+  <view class="orderCard" data-detail="{{item}}" bindtap="goDetail">
+    <view class="orderTop">
+      服务评价
+
+    </view>
+    <view class="orderContent">
+      <view class='evaluation_top'>
+        <view class='ico' bindtap='change_color' data-server="{{item}}" data-id='1' data-c='{{index}}'>
+          <view>{{ico_index1+index}}
+            <image class='ico_pace' src='/images/music{{serverId==item.id&&c==index?ico_index1+index:ico_index1+index}}.png' style='width:80rpx;height:80rpx; '></image>
+          </view>
+          <text>差评</text>
+        </view>
+        <view class='ico' bindtap='change_color' data-server="{{item}}" data-c='{{index}}' data-id='2'>
+          <view>{{ico_index2+index}}
+            <image class='ico_pace' src='/images/iqiyi{{serverId==item.id&&c==index?ico_index2+index:ico_index2+index}}.png' style='width:80rpx;height:80rpx; '></image>
+          </view>
+          <text>中评</text>
+        </view>
+        <view class='ico' bindtap='change_color' data-server="{{item}}" data-c='{{index}}' data-id='3'>
+          <view>{{ico_index3+index}}
+            <image class='ico_pace' src='/images/s{{serverId==item.id&&c==index?ico_index3+index:ico_index3+index}}.png' style='width:80rpx;height:80rpx; '></image>
+          </view>
+          <text>好评</text>
+        </view>
+      </view>
+    </view>
+
+
+  </view>
+</block> -->
+
+<!-- <view class="serverCard" data-detail="{{item}}" bindtap="goDetail">
+  <image src="/images/wx.png" class="img"></image>
+  <view class="bt">
+    <view class="bts">张三</view>
+    <view class="bts1">服务顾问</view>
+  </view>
+
+</view>
+<view class="orderCard" data-detail="{{item}}" bindtap="goDetail">
+  <view class="orderTop">
+    服务评价
+
+  </view>
+  <view class="orderContent">
+    <view class='evaluation_top'>
+      <view class='ico' bindtap='change_color' data-id='1'>
+        <view>
+          <image class='ico_pace' src='/images/music{{ico_index1}}.png' style='width:80rpx;height:80rpx; '></image>
+        </view>
+        <text>差评</text>
+      </view>
+      <view class='ico' bindtap='change_color' data-id='2'>
+        <view>
+          <image class='ico_pace' src='/images/iqiyi{{ico_index2}}.png' style='width:80rpx;height:80rpx; '></image>
+        </view>
+        <text>中评</text>
+      </view>
+      <view class='ico' bindtap='change_color' data-id='3'>
+        <view>
+          <image class='ico_pace' src='/images/s{{ico_index3}}.png' style='width:80rpx;height:80rpx; '></image>
+        </view>
+        <text>好评</text>
+      </view>
+    </view>
+  </view>
+
+
+</view> -->
+<view class="b" wx:if="{{serverlist[0]}}">
+<view class="serverCard" wx:if="{{serverlist[0]}}" data-detail="{{serverlist[0]}}" bindtap="goDetail">
+  <image src="{{serverlist[0].avatarUrl}}" class="img"></image>
+  <view class="bt">
+    <view class="bts">{{serverlist[0].adviserRealName}}</view>
+    <view class="bts1">{{serverlist[0].positionName}}</view>
+  </view>
+
+</view>
+<view class="orderCard" wx:if="{{serverlist[0]}}" data-detail="{{serverlist[0]}}" bindtap="goDetail">
+  <view class="orderTop">
+    服务评价
+
+  </view>
+  <view class="orderContent">
+    <view class='evaluation_top'>
+      <view class='ico' bindtap='change_color' data-server="{{serverlist[0]}}" data-id='1' data-c='0'>
+        <view>
+          <image class='ico_pace' src='/images/music{{ico_index1}}.png' style='width:80rpx;height:80rpx; '></image>
+        </view>
+        <text>差评</text>
+      </view>
+      <view class='ico' bindtap='change_color' data-server="{{serverlist[0]}}" data-c='0' data-id='2'>
+        <view>
+          <image class='ico_pace' src='/images/iqiyi{{ico_index2}}.png' style='width:80rpx;height:80rpx; '></image>
+        </view>
+        <text>中评</text>
+      </view>
+      <view class='ico' bindtap='change_color' data-server="{{serverlist[0]}}" data-c='0' data-id='3'>
+        <view>
+          <image class='ico_pace' src='/images/s{{ico_index3}}.png' style='width:80rpx;height:80rpx; '></image>
+        </view>
+        <text>好评</text>
+      </view>
+    </view>
+  </view>
+
+
+</view></view>
+
+<view class="b" wx:if="{{serverlist[1]}}">
+<view class="serverCard" wx:if="{{serverlist[1]}}" data-detail="{{serverlist[1]}}" bindtap="goDetail">
+  <image src="{{serverlist[1].avatarUrl}}" class="img"></image>
+  <view class="bt">
+    <view class="bts">{{serverlist[1].adviserRealName}}</view>
+    <view class="bts1">{{serverlist[1].positionName}}</view>
+  </view>
+
+</view>
+<view class="orderCard" wx:if="{{serverlist[1]}}"data-detail="{{serverlist[1]}}" bindtap="goDetail">
+  <view class="orderTop">
+    服务评价
+
+  </view>
+  <view class="orderContent">
+    <view class='evaluation_top'>
+      <view class='ico' bindtap='change_color' data-server="{{serverlist[1]}}" data-id='1' data-c='1'>
+        <view>
+          <image class='ico_pace' src='/images/music{{ico_index4}}.png' style='width:80rpx;height:80rpx; '></image>
+        </view>
+        <text>差评</text>
+      </view>
+      <view class='ico' bindtap='change_color' data-server="{{serverlist[1]}}" data-c='1' data-id='2'>
+        <view>
+          <image class='ico_pace' src='/images/iqiyi{{ico_index5}}.png' style='width:80rpx;height:80rpx; '></image>
+        </view>
+        <text>中评</text>
+      </view>
+      <view class='ico' bindtap='change_color' data-server="{{serverlist[1]}}" data-c='1' data-id='3'>
+        <view>
+          <image class='ico_pace' src='/images/s{{ico_index6}}.png' style='width:80rpx;height:80rpx; '></image>
+        </view>
+        <text>好评</text>
+      </view>
+    </view>
+  </view>
+
+
+</view>
+</view>
+<view class="b" wx:if="{{serverlist[2]}}">
+<view wx:if="{{serverlist[2]}}" class="serverCard" data-detail="{{serverlist[2]}}" bindtap="goDetail">
+  <image src="{{serverlist[2].avatarUrl}}" class="img"></image>
+  <view class="bt">
+    <view class="bts">{{serverlist[2].adviserRealName}}</view>
+    <view class="bts1">{{serverlist[2].positionName}}</view>
+  </view>
+
+</view>
+<view class="orderCard" wx:if="{{serverlist[2]}}" data-detail="{{serverlist[2]}}" bindtap="goDetail">
+  <view class="orderTop">
+    服务评价
+
+  </view>
+  <view class="orderContent" >
+    <view class='evaluation_top'>
+      <view class='ico' bindtap='change_color' data-server="{{serverlist[2]}}" data-id='1' data-c='2'>
+        <view>
+          <image class='ico_pace' src='/images/music{{ico_index7}}.png' style='width:80rpx;height:80rpx; '></image>
+        </view>
+        <text>差评</text>
+      </view>
+      <view class='ico' bindtap='change_color' data-server="{{serverlist[2]}}" data-c='2' data-id='2'>
+        <view>
+          <image class='ico_pace' src='/images/iqiyi{{ico_index8}}.png' style='width:80rpx;height:80rpx; '></image>
+        </view>
+        <text>中评</text>
+      </view>
+      <view class='ico' bindtap='change_color' data-server="{{serverlist[2]}}" data-c='2' data-id='3'>
+        <view>
+          <image class='ico_pace' src='/images/s{{ico_index9}}.png' style='width:80rpx;height:80rpx; '></image>
+        </view>
+        <text>好评</text>
+      </view>
+    </view>
+  </view>
+
+
+</view></view>
+<view class="bs">
+<view class="serverCard" data-detail="{{item}}" bindtap="goDetail">
+  
+  <view class="bt btt">
+    <view class="bts">{{distributor.name}}</view>
+   
+  </view>
+
+</view>
+
+<view class="orderCard" data-detail="{{item}}" bindtap="goDetail">
+  <view class="orderTop">
+    经销商评价
+
+  </view>
+  <view class="orderContent">
+    <view class='row'>
+      <multiple-rate bindchange="handleChange">
+
+      </multiple-rate>
+    </view>
+  </view>
+
+
+</view>
+</view>
+<!-- <van-button type="default" size="small" catchtap="goStart" custom-class="goServiceBtn">请对本次服务进行评价</van-button> -->
+ <view wx:if="{{loginable}}" class="bgLoginContent">
+    <van-button type="default" size="large" catchtap="goStart" custom-class='bgLogin'>请对本次服务进行评价</van-button>
+  </view>
+  <view wx:else class="bgLoginContent">
+    <van-button type="default" size="large" disabled custom-class='bgLogin1'>请对本次服务进行评价</van-button>
+  </view>
+<van-dialog id="van-dialog" />

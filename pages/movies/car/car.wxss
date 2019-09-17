@@ -1,0 +1,67 @@
+/* pages/movies/car/car.wxss */
+page {
+  background-color: #f2f2f2;
+}
+.car-container{ 
+    flex-direction:column;
+    display:flex;
+    margin-top:20rpx;
+    margin-bottom:40rpx;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+    background-color:#fff;
+  
+    padding: 20px;
+    /* border-bottom: 1px solid #a9aaa9 */
+}
+.add-container{
+   flex-direction:column;
+    display:flex;
+    margin-top:20rpx;
+    margin-bottom:40rpx;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+    background-color:#fff;
+   align-items: center;
+    padding: 20px;
+   
+    border-bottom: 1px solid #a9aaa9
+}
+.car-item{
+  margin-bottom: 10rpx;
+  display: flex
+}
+.f1{
+  flex: 2;
+  color: #999999;
+  
+  font-family: PingFangSC-Medium
+}
+.f2{
+  flex: 3;
+ max-width: 379rpx;
+  word-wrap:break-word ;
+}
+.add-item{
+  height: 150rpx;
+    width: 150rpx;
+    border-radius: 50%;
+   
+     line-height: 150rpx;
+     text-align: center;font-size: 30px
+}
+.add-w{
+  margin-top:20rpx;
+}
+.bgLoginContent{
+  width:100%;
+  text-align: right;margin-top: 10rpx
+}
+.bgLogin{
+   color: #FFFFFF !important;
+height: 50rpx!important;
+width: 30%!important;
+background:  #3247CD !important;
+line-height: 50rpx!important;
+border: 1px solid #a9aaa9!important;
+}

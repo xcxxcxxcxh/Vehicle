@@ -1,0 +1,125 @@
+/* pages/order/appraise/accomplish/accomplish.wxss */
+.orderCard{
+    display: flex;
+  flex-direction: column;
+ align-items: center;
+  
+  margin: 30rpx;
+  padding: 20rpx 0
+ 
+}
+.c{
+  position: relative;
+  text-align: center
+}
+.or{
+  position: absolute;
+  bottom: 40rpx;
+
+  width: 100%;
+  text-align: center
+}
+.ors{
+  display: inline-block;
+width: 202rpx;
+height: 50rpx;
+border: 1px solid #F52B33;
+color: #F52D35;
+font-size: 26rpx;
+line-height: 50rpx;
+font-weight: Bold
+}
+.f{
+  width: 100%;
+  height: 1334rpx
+}
+.orderTop{
+    display: flex;
+  flex-direction:row;
+ 
+  padding-bottom: 20rpx;
+ font-family:'Arial Negreta cursiva', 'Arial Normal', 'Arial';
+  font-weight:700;
+  font-style:italic;
+  font-size:36px;
+  color:#0099FF;
+}
+.orderTopM{
+    display: flex;
+  flex-direction:row;
+ 
+  padding-bottom: 20rpx;
+ font-family:'Arial Negreta cursiva', 'Arial Normal', 'Arial';
+  font-weight:700;
+  font-style:italic;
+  font-size:36px;
+  color:#333333;
+}
+.orderTopL{
+flex: 4
+}
+.orderTopM{
+  flex: 2
+}
+.orderTopR{
+  flex: 2.3
+}
+.bgLoginContent{
+  width:40%;
+  text-align: right;margin-top: 0rpx;
+  
+}
+.orderContent{
+  display: flex;
+  flex-direction:column;
+  margin-top: 16rpx;
+  width: 70%;
+  text-align: center;
+  font-family:'Arial Negreta cursiva', 'Arial Normal', 'Arial';
+  font-weight:700;
+  font-style:italic;
+  font-size:36px;
+  color:#0099FF;
+}
+.orderContentM{
+  display: flex;
+  flex-direction:column;
+  margin-top: 16rpx;
+  width: 70%;
+  text-align: center;
+  font-family:'Arial Negreta cursiva', 'Arial Normal', 'Arial';
+  font-weight:700;
+  font-style:italic;
+  font-size:36px;
+  color:#333333;
+}
+.orderContentMM{
+  display: flex;
+  flex-direction:column;
+  margin-top: 16rpx;
+  width: 70%;
+  text-align: center;
+  font-family:'Arial Normal', 'Arial';
+  font-weight:400;
+  font-style:normal;
+  font-size:13px;
+  color:#333333;
+  line-height:normal;
+}
+.orderTopMM{
+    display: flex;
+  flex-direction:row;
+ 
+  padding-bottom: 20rpx;
+   font-family:'Arial Negreta', 'Arial Normal', 'Arial';
+  font-weight:700;
+  font-style:normal;
+  font-size:18px;
+}
+.orderBottom{
+  padding: 70rpx
+}
+.img{
+  width: 200rpx;
+  height: 200rpx
+}

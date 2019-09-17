@@ -1,0 +1,13 @@
+
+<view class="container">
+<view class="phoneContent">
+<van-cell-group>
+  <van-field
+    value="{{ value }}"
+    placeholder="请输入车辆VIN码"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+</van-cell-group></view>
+<view  class="bgLoginContent"><van-button type="default"size="large" catchtap="vin" custom-class='bgLogin'>确认</van-button></view>
+</view><van-dialog id="van-dialog" />

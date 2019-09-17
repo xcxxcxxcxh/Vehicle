@@ -1,0 +1,123 @@
+/* pages/order/startOrder/estimate/estimate.wxss */
+.serviceTit{
+  text-align: left;
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+  font-weight: Medium;
+  font-size: 24px;
+
+
+  font-family: PingFangSC-Medium
+}
+
+
+.commitInfoR .word{
+  color: #424242;
+  font-weight: Bold;
+  font-family: PingFangSC-Bold
+}
+.serviceCard{
+   display: flex;
+   flex: 3;
+    flex-direction:column;
+    align-items: center;
+    width: 100%;
+    padding: 20rpx 0 30rpx;
+   
+   
+}
+.serviceAdd{
+   display: flex;
+    flex-direction:row;
+     border-bottom: 1px solid #33333327
+}
+.serviceCardRadio{
+  flex:2
+}
+.carList{
+  width: 79%;
+   display: flex;
+    flex-direction:row;
+    margin-bottom: 20rpx
+}
+.carInfo{
+ width: 100%;
+  display: flex;
+    flex-direction:column;
+    line-height: 60rpx
+}
+.carRadio{
+  
+  text-align: center
+}
+.carInfoTop{
+   
+     display: flex;
+    justify-content:space-between;
+}
+
+.radio {
+  text-align: center;
+    display: block;
+   line-height: 120rpx;
+   margin-bottom: 20rpx
+    
+}
+.commitOrder{
+  display: flex;
+    flex-direction:column;
+     padding: 20rpx 0 30rpx;
+     margin-left: 40rpx
+}
+.commitInfo{
+   display: flex;
+    flex-direction:row;
+    margin-top: 20rpx
+}
+.commitInfoL{
+  flex: 2;
+  display: flex;
+    flex-direction:column;
+    line-height: 70rpx;
+   
+    
+}
+.word{
+   font-size: 16px;
+    font-family: "Arial Negreta", "Arial Normal", "Arial";
+    font-weight: 700;
+    color:#666666;
+    width: 300rpx;
+    word-wrap : break-word
+}
+
+.wordw{
+   font-size: 16px;
+    font-family: "Arial Negreta", "Arial Normal", "Arial";
+    font-weight: 700;
+    color:#666666;
+   
+}
+.commitInfoR{
+  flex: 3;
+  display: flex;
+    flex-direction:column;
+     line-height: 70rpx
+}
+.goServiceBtn{
+  color: #fff !important;
+height: 88rpx!important;
+width: calc(100% - 40rpx)!important;
+
+margin: 20rpx;
+background:  #3247CD!important;
+line-height: 88rpx!important;
+border: 1px solid #3247CD!important;
+border-radius: 10rpx!important;
+font-size: 18px!important;
+font-family: "Arial Normal", "Arial"
+}
+.comitBtn{
+  text-align: center;
+  margin-top: 70rpx
+}

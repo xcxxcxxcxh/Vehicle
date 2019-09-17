@@ -1,0 +1,126 @@
+/* pages/order/repurchase/repurchase.wxss */
+page {
+  background-color: #f2f2f2;
+}
+.mar{
+  margin-top: 20rpx
+}
+.orderCard{
+    display: flex;
+  flex-direction: column;
+  padding: 40rpx 70rpx;
+
+  
+  background: #ffffff;
+
+   border-bottom: 1px solid rgb(223, 219, 219);
+ 
+}
+.add-item{
+  height: 150rpx;
+    width: 150rpx;
+    border-radius: 50%;
+   
+     line-height: 150rpx;
+     text-align: center;font-size: 30px
+}
+.orderCardC{
+    display: flex;
+  flex-direction: column;
+  padding: 20rpx 20rpx;
+  align-items: center;
+
+  
+  background: #ffffff;
+
+   border-bottom: 1px solid rgb(223, 219, 219);
+ 
+}
+.orderTop{
+    display: flex;
+  flex-direction:row;
+ 
+  padding-top: 10rpx;
+  font-size: 30rpx
+}
+.orderTopL{
+flex: 4
+}
+.orderTopM{
+  flex: 2
+}
+.orderTopR{
+  flex: 2.3
+}
+.bgLoginContent{
+  width:70%;
+  text-align: right;margin-top: 0rpx;
+  
+}
+.bgLoginContentT{
+  width:100px;
+  text-align: left;margin-top: 0rpx;
+  
+}
+.orderContent{
+  display: flex;
+  flex: 1;
+  flex-direction:row;
+  margin-top: 16rpx
+}
+.orderContentF{
+display: flex;
+  flex-direction:row;
+}
+.orderBottom{
+   display: flex;
+    justify-content:space-between;
+    margin-top: 20rpx;
+   
+  
+  
+}
+.orderBottomL{
+line-height: 50rpx
+}
+.bgLogin{
+   color: black !important;
+height: 50rpx!important;
+width: 100%!important;
+background:  #ebf1ee !important;
+line-height: 50rpx!important;
+border: 1px solid #a9aaa9!important;
+}
+.bgLoginGo{
+   color: #fff !important;
+height: 50rpx!important;
+width: 100%!important;
+background:  #230cf1 !important;
+line-height: 50rpx!important;
+border: 1px solid #a9aaa9!important;
+}
+.goService{
+  
+  width:100%;
+  text-align: center;margin-top: 0rpx;
+  margin: 20rpx
+  
+
+}
+
+.goServiceBtn{
+  color: #fff !important;
+height: 130rpx!important;
+width: calc(100% - 40rpx)!important;
+
+margin: 20rpx;
+background:  rgba(0, 102, 153, 1)!important;
+line-height: 130rpx!important;
+border: 1px solid #a9aaa9!important;
+border-radius: 10rpx!important;
+font-size: 18px!important;
+font-family: "Arial Normal", "Arial"
+}
+.orderTopLT{
+  font-size: 47rpx
+}

@@ -1,0 +1,86 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/order/appraise/aaccomplish/accomplish",
+    "pages/order/appraise/appraise",
+   
+    "pages/welcomeTab/welcomeTab",
+    "pages/movies/movies",
+   
+    "pages/posts/post",
+    "pages/order/startOrder/startOrder",
+    
+   
+    
+    
+    "pages/order/order",
+    "pages/order/repurchase/repurchase",
+    "pages/order/introduceDetail/introduceDetail",
+    "pages/order/replacementDetial/replacementDetial",
+    "pages/order/usedCarOrderDetial/usedCarOrderDetial",
+    "pages/order/startOrder/introduce/introduce",
+    "pages/order/startOrder/buyCar/buyCar",
+    "pages/order/startOrder/estimate/estimate",
+    
+   
+    
+    "pages/movies/service/service",
+    "pages/movies/car/car",
+    "pages/movies/car/addCar/addCar",
+    "pages/login/loginAuthorization/loginByPhone/loginByPhone",
+    "pages/login/loginAuthorization/loginAuthorization",
+    "pages/movies/movie-detail/movie-detail",
+    "pages/posts/post-detail/post-detail",
+    "pages/movies/more-movie/more-movie",
+    "pages/login/login",
+    "pages/login/agree/agree",
+    "pages/movies/name/name",
+    "pages/movies/love/love",
+    "pages/movies/hasServer/hasServer"
+   
+    
+  ],
+  "navigateToMiniProgramAppIdList": [
+    "wx6ae7a0b6148055ec","wx5192d226ca478d50","wx9155cdf82","wx9155cdf82ca8d7c3"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "navigationBarTitleText": "与丰同行惠享通道",
+    "navigationBarBackgroundColor": "#3247CD"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+        {
+          "pagePath": "pages/posts/post",
+          "text": "首页活动",
+          "iconPath": "images/tab/dianying.png",
+          "selectedIconPath": "images/tab/dianying_hl.png"
+        },
+        {
+          "pagePath": "pages/posts/post",
+          "text": "首页活动",
+          "iconPath": "images/tab/dianying.png",
+          "selectedIconPath": "images/tab/dianying_hl.png"
+        }
+     
+    ]
+  },
+  "usingComponents": {
+    "van-button": "../../dist/button/index",
+    "van-icon": "../../dist/icon/index",
+    "van-field": "../../dist/field/index",
+    "van-dialog": "../../dist/dialog/index",
+    "van-cell": "../../dist/cell/index",
+    "van-cell-group": "../../dist/cell-group/index",
+    "van-search": "../../dist//search/index",
+    "van-radio": "../../dist/radio/index",
+    "van-radio-group": "../../dist/radio-group/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

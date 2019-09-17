@@ -1,0 +1,83 @@
+/* pages/order/startOrder/introduce/introduce.wxss */
+page {
+  background-color: #f2f2f2;
+}
+.w{
+ font-size: 17px !important;
+    font-family: "Arial Negreta", "Arial Normal", "Arial";
+    font-weight: 700;
+    color:#424242;
+    padding: 3rpx;
+}
+.commitInfoR .word{
+  color: #424242;
+  font-weight: Bold;
+  font-family: PingFangSC-Bold
+}
+.word{
+   font-size: 14px;
+    font-family: "Arial Negreta", "Arial Normal", "Arial";
+    font-weight: 700;
+    color:#666666;
+    padding: 3rpx
+}
+
+.words{
+   font-size: 14px;
+    font-family: "Arial Negreta", "Arial Normal", "Arial";
+    font-weight: 700;
+    color:#333333;
+    padding: 30rpx;
+    background: #ffffff;
+    margin-top: 30rpx
+}
+.commitOrder{
+  display: flex;
+    flex-direction:column;
+     padding: 20rpx 0 30rpx;
+     padding-left: 40rpx;
+     margin-top: 30rpx;
+      background: #ffffff
+}
+.commitInfo{
+   display: flex;
+    flex-direction:row;
+    margin-top: 20rpx
+}
+.commitInfoL{
+  flex: 2;
+  display: flex;
+    flex-direction:column;
+    line-height: 70rpx;
+   
+    
+}
+/* .word{
+   font-size: 16px;
+    font-family: "Arial Negreta", "Arial Normal", "Arial";
+    font-weight: 700;
+    color:#333333
+} */
+.commitInfoR{
+  flex: 3;
+  display: flex;
+    flex-direction:column;
+     line-height: 70rpx
+}
+.goServiceBtn{
+  color: #fff !important;
+height: 88rpx!important;
+width: calc(100% - 40rpx)!important;
+
+margin: 20rpx;
+background:  #3247CD!important;
+line-height: 88rpx!important;
+border: 1px solid #3247CD!important;
+border-radius: 10rpx!important;
+font-size: 18px!important;
+font-family: "Arial Normal", "Arial"
+}
+.comitBtn{
+  text-align: center;
+  margin-top: 70rpx
+}

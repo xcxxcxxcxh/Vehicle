@@ -1,0 +1,8 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+  <image class="avatar" src="/images/logo.png"></image>
+  <text class="motto">请登录后查看您的{{type}}</text> 
+  <view class="journey-container" bindtap="onTap">
+    <van-button type="info" size='large' catchtap="onLoginAuthorization" custom-class="goServiceBtn" style="border-radius: 4px;background:red">登录</van-button>
+  </view>
+</view>

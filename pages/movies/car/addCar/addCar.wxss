@@ -1,0 +1,20 @@
+/* pages/movies/car/addCar/addCar.wxss */
+.bgLogin{
+   color: black !important;
+height: 70rpx!important;
+width: 70%!important;
+line-height: 70rpx!important;
+border: 1px solid #eaf0ed!important;
+}
+.bgLogin1{
+   color: rgb(194, 183, 183) !important;
+height: 70rpx!important;
+width: 70%!important;
+line-height: 70rpx!important;
+background-color: #ebf1ee !important;
+border: 1px solid #eaf0ed!important;
+}
+.bgLoginContent{
+  width:100%;
+  text-align: center;margin-top: 100rpx
+}

@@ -1,0 +1,31 @@
+/* pages/order/startOrder/startOrder.wxss */
+.serviceCard{
+   display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 100%;
+    padding: 20rpx 0 30rpx;
+    /* border-bottom: 1px solid #33333327 */
+   
+}
+
+
+
+
+.serviceTit{
+  text-align: left;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  font-weight: Medium;
+  font-family: PingFangSC-Medium;
+  color: #424242
+}
+.serviceCardImage{
+  width: calc(100% - 40rpx);
+  height: 300rpx;
+  box-shadow:  4px 4px 4px rgba(63, 36, 36, 0.363);
+  margin-bottom: 20rpx
+}
+.serviceW{
+   font-weight: bold
+}

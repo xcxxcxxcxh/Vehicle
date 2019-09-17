@@ -1,0 +1,23 @@
+<!--pages/movies/car/addCar/addCar.wxml-->
+
+  <picker  disabled='{{is}}' bindchange="bindPickerChange" value="{{carName}}" range="{{array}}">
+    <view class="picker">
+    <van-cell title="车型" bindtap="op"  is-link value='{{type}}'>
+  <van-icon slot="right-icon" name="search" class="custom-icon" />
+</van-cell>
+     
+    </view>
+  </picker>
+   <picker  disabled='{{is}}' bindchange="bindPickerChangeYear" value="{{index}}" range="{{years}}">
+    <view class="picker">
+    <van-cell title="购车时间" bindtap="op"  is-link value='{{year}}'>
+  <van-icon slot="right-icon" name="search" class="custom-icon" />
+</van-cell>
+     
+    </view>
+  </picker>
+  <van-cell title="车架号VIN码" is-link value="{{vin}}" link-type="navigateTo"
+  url="vin/vin"/>
+  <view  class="bgLoginContent"><van-button type="default"size="large" catchtap="back" custom-class='bgLogin'>确认</van-button></view>
+  <van-dialog id="van-dialog" />
+

@@ -1,0 +1,123 @@
+@import "../posts/post-item/post-item-template.wxss";
+.wor{
+  color: #333333;
+  font-weight: Medium;
+  font-family: PingFangSC-Medium;
+}
+.avti{
+  display: flex;
+    flex-direction:row;
+    margin-bottom: 100rpx;
+    margin-top: 20rpx
+    
+}
+.avtiL{
+  flex: 1;
+  display: flex;
+   flex-direction:column;
+   align-items: center;
+}
+.avtiR{
+  flex:1;
+   display: flex;
+  flex-direction:column;
+   align-items: center;
+}
+ swiper{
+     width:100%;
+     height:402rpx;
+ }
+ /*less sass*/
+ swiper image{
+     width:100%;
+     height:402rpx;
+ }
+.container{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color:#b3d4db;
+    width: 100%;height: 100%
+}
+
+.avatar{
+    width:200rpx;
+    height:200rpx;
+    margin-top:160rpx;
+}
+.wxLog{
+    width:50rpx;
+    height:50rpx;
+    margin-top:70rpx;
+    vertical-align: -10rpx
+}
+.motto{
+    margin-top:100rpx;
+    font-size:32rpx;
+    font-weight: bold;
+}
+
+.journey-container{
+    margin-top: 100rpx;
+    border: 1px solid #fff;
+    width: 200rpx;
+    height: 80rpx;
+    border-radius: 5px;
+    text-align:center;
+    filter:alpha(opacity=100);  /*设置透明度为60%*/
+    opacity:1;  /*非IE浏览器下设置透明度为60%*/
+}
+
+.journey{
+   filter:alpha(opacity=100);  /*设置透明度为60%*/
+    opacity:1;  /*非IE浏览器下设置透明度为60%*/
+    font-size:22rpx;
+    font-weight: bold;
+    line-height:80rpx;
+    color: #f1f3f5;
+}
+.remind{
+   filter:alpha(opacity=100);  /*设置透明度为60%*/
+    opacity:1;  /*非IE浏览器下设置透明度为60%*/
+  color: white;
+    display: flex;
+    flex-direction:column;
+    align-items: center;margin-top: 190rpx
+}
+.model{
+  position:absolute;left:0px;top:0px;
+    background:rgba(27, 27, 27, 0.87);
+    width:100%;  /*宽度设置为100%，这样才能使隐藏背景层覆盖原页面*/
+    height:100%;
+    filter:alpha(opacity=90);  /*设置透明度为60%*/
+    opacity:0.9;  /*非IE浏览器下设置透明度为60%*/
+    display:block; 
+    z-Index:999;
+    overflow: hidden 
+}
+.actImg{
+ width:100%;
+     height:300rpx;
+     margin-top: 10rpx;
+}
+.actImg3{
+ width:222rpx;
+     height:100rpx;
+     margin-top: 10rpx;
+}
+.act{
+ width:95%;
+     height:300rpx;
+     margin-top: 10rpx;
+}
+.orderAndMe{
+   display: flex;
+    flex-direction:column;
+     align-items: center;
+     position: relative;
+     margin-bottom: 10rpx
+}
+page{
+    height: 100%;
+    background-color:#b3d4db34;
+}

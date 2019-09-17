@@ -1,0 +1,50 @@
+/* pages/login/login.wxss */
+.container{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color:#fff;
+    width: 100%;height: 1334rpx
+}
+
+.avatar{
+    width:300rpx;
+    height:150rpx;
+    margin-top:160rpx;
+}
+
+.goServiceBtn{
+  background: rgb(227, 227, 227) !important;
+  border: 1px solid rgb(112, 112, 112) !important;
+  color: rgb(49, 49, 49) !important;
+  width: 400rpx !important;
+  height: 70rpx!important;
+  line-height: 70rpx!important;
+
+}
+
+
+
+
+.motto{
+    margin-top:100rpx;
+      font-family:'Arial Negreta', 'Arial Normal', 'Arial';
+  font-weight:700;
+  font-style:normal;
+  font-size:18px;
+  color: #333333
+}
+.journey-container{
+    margin-top: 100rpx;
+    border: 1px solid #fff;
+    width:100%;
+    height: 80rpx;
+    border-radius: 5px;
+    text-align:center;
+    filter:alpha(opacity=100);  /*设置透明度为60%*/
+    opacity:1;  /*非IE浏览器下设置透明度为60%*/
+}
+.bc{
+  background: black;
+  border-radius: 4px
+}

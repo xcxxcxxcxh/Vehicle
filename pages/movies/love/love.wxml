@@ -1,0 +1,14 @@
+<!--pages/movies/love/love.wxml-->
+<view class="bl">
+<block wx:for="{{gd1List2}}">
+
+<button  class="{{item.isChecked2?'bls a3':'bls a2'}}" bindtap='getDemo2' data-text="{{item.name}}" data-index='{{index}}'>
+
+{{item.name}}
+
+</button>
+
+</block></view>
+<!-- <view  class="bgLoginContent"><van-button type="default"size="large" catchtap="love" custom-class='bgLogin'>确认</van-button></view> -->
+<van-dialog id="van-dialog" />
+<van-button type="default" size="small" catchtap="login" catchtap="love" custom-class="goServiceBtn">确认</van-button>

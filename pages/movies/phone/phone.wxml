@@ -1,0 +1,32 @@
+<!--pages/login/loginAuthorization/loginByPhone/loginByPhone.wxml-->
+<view class="container">
+<view class="phoneContent">
+<van-cell-group>
+  <van-field
+    value="{{ sms }}"
+    center
+    clearable
+    label=""
+    type="number"
+    placeholder="请输入手机号"
+    bind:change="onChange"
+    use-button-slot
+  >
+    <van-button slot="button" size="small"   type="primary" custom-class='bg' catchtap="send" wx:if="{{!disabled}}" disabled="{{disabled}}">{{btntxt}}</van-button>
+    <van-button slot="button" size="small"   type="primary" custom-class='bg'  wx:if="{{disabled}}" disabled="{{disabled}}">{{btntxt}}</van-button>
+  </van-field>
+  <van-field
+    value="{{ code }}"
+    center
+    clearable
+     type="number"
+    label=""
+    placeholder="请输入验证码"
+   bind:change="onChangeCode"
+    use-button-slot
+  >
+    
+  </van-field>
+</van-cell-group></view>
+<view wx:if="{{loginable}}" class="bgLoginContent"><van-button type="default"size="large" catchtap="login" custom-class='bgLogin'>确认</van-button></view>
+<view wx:else class="bgLoginContent"><van-button type="default"size="large"  disabled  custom-class='bgLogin1'>确认</van-button></view></view><van-dialog id="van-dialog" />

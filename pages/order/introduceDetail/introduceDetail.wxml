@@ -1,0 +1,168 @@
+<!--pages/order/introduceDetail/introduceDetail.wxml-->
+<!--pages/order/replacementDetial/replacementDetial.wxml-->
+<view class="orderCardC">
+<image class="add-item" wx:if="{{orderDetial.fawOrder.orderStatus==1||orderDetial.fawOrder.orderStatus==2}}" src="/images/ing.png"></image>
+  <image class="add-item" wx:if="{{orderDetial.fawOrder.orderStatus==3}}" src="/images/finish.png"></image>
+  <view class="orderTop">
+    <view class="orderTopLT">{{orderDetial.fawOrder.orderTypeName}}{{(orderDetial.fawOrder.orderStatus==1||orderDetial.fawOrder.orderStatus==2)?"服务受理中":(orderDetial.fawOrder.orderStatus==3?"服务已完成":"")}}
+    </view>
+
+
+  </view>
+   <view class="orderContent" wx:if="{{orderDetial.fawOrder.orderStatus==1||orderDetial.fawOrder.orderStatus==2}}">
+    <text>感谢您的信任，我们将竭诚为您服务</text>
+  </view>
+  <view class="orderContent" wx:if="{{orderDetial.fawOrder.orderStatus==3}}">
+    <text>感谢您的信任，期待再次光临</text>
+  </view>
+  <view class="orderBottom">
+    <!-- <text class="orderBottomL">服务顾问姓名：{{item.name}}</text> -->
+    <view class="bgLoginContentT">
+      <van-button wx:if="{{orderDetial.fawOrder.evaluationStatus==0&&orderDetial.fawOrder.orderStatus==3}}" type="default" size="small" data-detail="{{orderDetial.fawOrder}}" catchtap="go" custom-class="bgLoginGo">评价有礼</van-button>
+      <van-button wx:elif="{{orderDetial.fawOrder.evaluationStatus==1}}" type="default" size="small" data-detail="{{orderDetial.fawOrder}}" catchtap="go1" custom-class="bgLoginGo">已评价</van-button>
+      <van-button wx:else type="default" size="small" catchtap="go" custom-class="bgLogin">评价有礼</van-button>
+    </view>
+  </view>
+
+</view>
+<view class="orderCard">
+  <view class="orderTop">
+    <view class="orderTopL">被介绍人信息
+    </view>
+    <!-- <view class="orderTopM">哈哈</view>
+      <view class="orderTopR">哈哈哈></view> -->
+
+  </view>
+  <view class="orderContentF">
+    <view class="orderContent ">
+      <text>被介绍人姓名</text>
+      <!-- <text>北京</text> -->
+    </view>
+    <view class="orderContent">
+      <text>{{orderDetial.fawOrderItem.realName}}</text>
+      <!-- <text>北京</text> -->
+    </view>
+  </view>
+  <view class="orderContentF">
+    <view class="orderContent ">
+      <text>被介绍人手机号码</text>
+      <!-- <text>北京</text> -->
+    </view>
+    <view class="orderContent">
+      <text>{{orderDetial.fawOrderItem.phone}}</text>
+      <!-- <text>北京</text> -->
+    </view>
+  </view>
+  <view class="orderContentF">
+    <view class="orderContent ">
+      <text>意向车型：</text>
+      <!-- <text>北京</text> -->
+    </view>
+    <view class="orderContent">
+      <text>{{orderDetial.intentionCar.carName}}</text>
+      <!-- <text>北京</text> -->
+    </view>
+  </view>
+</view>
+
+
+
+<view class="orderCard">
+  <view class="orderTop">
+    <view class="orderTopL">{{orderDetial.fawDistributor.name}}
+    </view>
+    <!-- <view class="orderTopM">哈哈</view>
+      <view class="orderTopR">哈哈哈></view> -->
+
+  </view>
+  <view class="orderContentF">
+    <view class="orderContent ">
+      <text>地址：</text>
+      <!-- <text>北京</text> -->
+    </view>
+    <view class="orderContent">
+      <!-- <text>服务受理经销店：</text> -->
+      <text>{{orderDetial.fawDistributor.address}}</text>
+    </view>
+  </view>
+  <view class="orderContentF">
+    <view class="orderContent ">
+      <text>服务热线：</text>
+      <!-- <text>北京</text> -->
+    </view>
+    <view class="orderContent">
+      <!-- <text>服务受理经销店：</text> -->
+      <text>{{orderDetial.fawDistributor.serviceHotline}}</text>
+    </view>
+  </view>
+  <view class="orderContentF">
+    <view class="orderContent ">
+      <text>服务顾问：</text>
+      <!-- <text>北京</text> -->
+    </view>
+    <view class="orderContent">
+      <!-- <text>服务受理经销店：</text> -->
+      <text>{{orderDetial.sa.realName}}</text>
+    </view>
+  </view>
+  <view class="orderContentF">
+    <view class="orderContent ">
+      <text>顾问手机号：</text>
+      <!-- <text>北京</text> -->
+    </view>
+    <view class="orderContent">
+      <!-- <text>服务受理经销店：</text> -->
+      <text>{{orderDetial.sa.phone}}</text>
+    </view>
+  </view>
+
+
+</view>
+<view class="orderCard">
+  <view class="orderTop">
+    <view class="orderTopL">转介绍服务订单信息
+
+    </view>
+    <!-- <view class="orderTopM">哈哈</view>
+      <view class="orderTopR">哈哈哈></view> -->
+
+  </view>
+  <view class="orderContent ">
+    <!-- <text>服务申请提交时间：</text> -->
+    <text>订单号：{{orderDetial.fawOrder.orderNo}}</text>
+  </view>
+  <view class="orderContentF">
+    <view class="orderContent ">
+      <!-- <text>服务申请提交时间：</text> -->
+      <text>服务申请提交时间：</text>
+    </view>
+    <view class="orderContent">
+      <!-- <text>服务受理经销店：</text> -->
+      <text>{{orderDetial.orderTimeDTO.orderCreateTime}}</text>
+    </view>
+  </view>
+  <view class="orderContentF">
+    <view class="orderContent ">
+      <!-- <text>服务申请提交时间：</text> -->
+      <text>服务顾问受理时间：</text>
+    </view>
+    <view class="orderContent">
+      <!-- <text>服务受理经销店：</text> -->
+      <text>{{orderDetial.orderTimeDTO.saTransferTime?orderDetial.orderTimeDTO.saTransferTime:'---- -- -- --:--:--'}}</text>
+    </view>
+  </view>
+
+  <view class="orderContentF">
+    <view class="orderContent ">
+      <!-- <text>服务申请提交时间：</text> -->
+      <text>转介绍服务完成时间：</text>
+    </view>
+    <view class="orderContent">
+      <!-- <text>服务受理经销店：</text> -->
+      <text>{{orderDetial.orderTimeDTO.orderCompletionTime?orderDetial.orderTimeDTO.orderCompletionTime:'---- -- -- --:--:--'}}</text>
+    </view>
+  </view>
+
+
+
+</view>

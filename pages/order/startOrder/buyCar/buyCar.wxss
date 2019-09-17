@@ -1,0 +1,67 @@
+/* pages/order/startOrder/buyCar/buyCar.wxss */
+page {
+  background-color: #f2f2f2;
+}
+.commitOrder{
+  display: flex;
+    flex-direction:column;
+     padding: 20rpx 0 30rpx;
+     padding-left: 40rpx;
+     background: #ffffff;
+     margin-top: 30rpx
+}
+.commitInfo{
+   display: flex;
+    flex-direction:row;
+    margin-top: 20rpx
+}
+.commitInfoL{
+  flex: 2;
+  display: flex;
+    flex-direction:column;
+    line-height: 70rpx;
+   
+    
+}
+.w{
+ font-size: 17px !important;
+    font-family: "Arial Negreta", "Arial Normal", "Arial";
+    font-weight: 700;
+    color:#424242;
+    padding: 3rpx;
+    padding-left: 40rpx!important;
+}
+.commitInfoR .word{
+  color: #424242;
+  font-weight: Bold;
+  font-family: PingFangSC-Bold
+}
+.word{
+   font-size: 16px;
+    font-family: "Arial Negreta", "Arial Normal", "Arial";
+    font-weight: 700;
+     color:#666666
+}
+.commitInfoR{
+  flex: 3;
+  display: flex;
+    flex-direction:column;
+     line-height: 70rpx
+}
+.goServiceBtn{
+  color: #fff !important;
+height: 88rpx!important;
+width: calc(100% - 40rpx)!important;
+
+margin: 20rpx;
+background:  #3247CD!important;
+line-height: 88rpx!important;
+border: 1px solid #3247CD!important;
+border-radius: 10rpx!important;
+font-size: 18px!important;
+font-family: "Arial Normal", "Arial"
+}
+.comitBtn{
+  text-align: center;
+  margin-top: 70rpx
+}

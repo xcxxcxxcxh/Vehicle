@@ -1,0 +1,27 @@
+<!--pages/movies/hasServer/hasServer.wxml-->
+
+
+
+<view class="serviceCard">
+  <view class="tit">您好，我是您的服务顾问</view>
+  <view class="im">
+    <image src="{{serviceList.avatarUrl}}" class="serviceImage"></image>
+  </view>
+  <view class="content">
+    <view class="contentItem">
+      <view class="wl"> 姓名：</view>
+      <view class="wr  ws">{{serviceList.realName}}</view>
+    </view>
+    <view class="contentItem">
+      <view class="wl">服务经验：</view>
+      <view class="wr">{{serviceList.workYear}} 年</view>
+      </view>
+  <view class=" contentItem ">
+  <view class="wl ">联系方式：</view>      <view class=" w wr ">{{serviceList.phone}}</view>
+  
+  </view>
+   <view class="contentItem "><view class="wl ">所在门店： </view>     <view class="wr">{{serviceList.disName}}</view>
+    </view>
+  </view>
+</view>
+<van-dialog id="van-dialog" show-cancel-button='{{isCansle}}' />

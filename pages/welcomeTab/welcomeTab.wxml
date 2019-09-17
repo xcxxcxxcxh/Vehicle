@@ -1,0 +1,53 @@
+<import src="../posts/post-item/post-item-template.wxml" />
+<!--<import src="/pages/posts/post-item/post-item-template.wxml" />-->
+<view>
+  <swiper catchtap="onSwiperTap" vertical="{{false}}" indicator-dots="true" indicator-color="#fff" indicator-active-color="#0172e2" autoplay="true" interval="5000">
+  <block wx:for="{{imgList}}" >
+    <swiper-item wx-if="{{item.activityType==1}}">
+      <image id="7" src="{{item.imageUrl}}" data-postId="{{item}}"></image>
+    </swiper-item>
+    <!-- <swiper-item>
+      <image src="/images/cars.png" data-postId="4"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/cars.png" data-postId="5"></image>
+    </swiper-item> -->
+    </block>
+  </swiper>
+  <view class="orderAndMe" catchtap="onLogin" data-postId="6">
+    <view class="act">
+      <image id="7" src="/images/order.png" data-postId="6" class="actImg"></image>
+      <!-- <van-icon name="column" size='34px' color='#fff' custom-style='position:absolute;left:320rpx;top:97rpx' />
+      <text style="position:absolute;left:320rpx;top:190rpx;color:#fff;font-size:16px">订单</text> -->
+    </view>
+  </view>
+  <view class="orderAndMe" catchtap="onLogin" data-postId="7">
+    <view class="act">
+      <image id="7" src="/images/wo.png" data-postId="7" class="actImg"></image>
+      <!-- <van-icon name="manager" size='34px' color='#fff' custom-style='position:absolute;left:320rpx;top:97rpx' />
+      <text style="position:absolute;left:320rpx;top:190rpx;color:#fff;font-size:16px">我的</text> -->
+    </view>
+  </view>
+</view>
+<view class="model" wx:if="{{modalFlag}}" catchtouchmove="preventTouchMove">
+  <view class="remind">
+    <view>点击
+      <image class="wxLog" src="/images/li.png"></image>添加到我的小程序</view>
+    <view>下拉微信进入小程序</view>
+    <view class="journey-container" catchtap="modalOk">
+      <text class="journey">知道了</text>
+    </view>
+  </view>
+
+</view>
+<view class="avti">
+<view class="avtiL" catchtap="onSwiperTap"><block wx:for="{{imgList}}" ><image wx-if="{{item.activityType==2}}" src="{{item.imageUrl}}" data-postId="{{item}}" class="actImg3" ></image><view wx-if="{{item.activityType==2}}" class="wor">活动</view></block></view>
+
+
+
+<view class="avtiR"><image class="actImg3" src="/images/sh.png"></image><view class="wor">我的“身边”</view></view> 
+<view class="avtiR"><image class="actImg3" src="/images/shs.png"></image><view class="wor">我的“分享会”</view></view>  
+</view>
+<van-dialog id="van-dialog" />
+<!-- <van-button type="primary">按钮</van-button>
+<van-icon name="orders-o" size='44px' color='#fff' /> -->

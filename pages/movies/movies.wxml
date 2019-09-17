@@ -1,0 +1,67 @@
+<view class="container">
+<van-cell title="头像" id='conClass' is-link bindtap="upload" value="{{image}}" style="backgound:red" value-class='bg' />
+<image src="{{background}}" bindtap="upload" class="size" data-postId="4"></image>
+<!-- <van-cell title="姓名" is-link link-type="navigateTo" bindtap="op2" value="{{name}}"  /> -->
+
+
+<van-cell value="{{name}}" link-type="navigateTo" bindtap="op2"  is-link>
+  <view slot="title">
+    <view class="van-cell-text">姓名 <text class="re">*</text> </view>
+   
+  </view>
+</van-cell>
+<picker disabled='{{is}}' bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+  <view class="picker">
+    <!-- <van-cell title="性别" bindtap="op" is-link value='{{sex}}'>
+      <van-icon slot="right-icon" name="search" class="custom-icon" />
+    </van-cell> -->
+
+    <van-cell value="{{sex}}" link-type="navigateTo" bindtap="op"  is-link>
+  <view slot="title">
+    <view class="van-cell-text">性别 <text class="re">*</text> </view>
+   
+  </view>
+</van-cell>
+
+  </view>
+</picker>
+
+<!-- <van-cell  link-type="navigateTo" url="phone/phone"  value="{{phone}}" title="手机号" is-link /> -->
+ <van-cell value="{{phone}}" link-type="navigateTo"  url="phone/phone"   is-link>
+  <view slot="title">
+    <view class="van-cell-text">手机号  </view>
+   
+  </view>
+</van-cell>
+<picker mode="date" custom-class="mar" disabled='{{isPhone}}' value="{{date}}" bindchange="bindDateChange">
+  <view class="picker" >
+    <van-cell title="生日" custom-class="mar" bindtap="opPhone" is-link value='{{date}}' />
+
+  </view>
+</picker>
+<van-cell title="爱好" is-link link-type="navigateTo" value="{{love}}" url="love/love" />
+<picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+  <view class="picker">
+    <van-cell title="地区" is-link value="{{region[0]}}{{region[1]}}{{region[2]}}" />
+
+  </view>
+</picker>
+<van-cell value="{{carCount}}" link-type="navigateTo" custom-class="mar" url="car/car"   is-link>
+  <view slot="title">
+    <view class="van-cell-text">我的爱车 <text class="re">*</text> </view>
+   
+  </view>
+</van-cell>
+<!-- <van-cell title="服务代表" custom-class="mar" bindtap="chooseServer" value="{{saName}}" is-link /> -->
+ <van-cell value="{{saName}}" link-type="navigateTo" custom-class=""  bindtap="chooseServer"  is-link>
+  <view slot="title">
+    <view class="van-cell-text">我的服务顾问 <text class="re">*</text> </view>
+   
+  </view>
+</van-cell>
+<!-- <van-cell title="爱车" link-type="navigateTo" value="{{carCount}}" url="car/car" is-link /> -->
+
+
+<van-dialog id="van-dialog" />
+<van-button type="default" size="small" catchtap="login" custom-class="goServiceBtn">退出登录</van-button>
+</view>

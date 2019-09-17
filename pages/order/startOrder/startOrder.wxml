@@ -1,0 +1,13 @@
+<!--pages/order/startOrder/startOrder.wxml-->
+<view class="serviceTit">请选择您要申请的服务</view>
+<view class="serviceCard" bindtap="goServe" data-postId="0"><image src="/images/est.png" class="serviceCardImage"></image>
+<!-- <view class="serviceW">评估置换</view> -->
+</view>
+<view class="serviceCard" bindtap="goServe" data-postId="1"><image src="/images/buyCar.png" class="serviceCardImage"></image>
+<!-- <view class="serviceW">再购新车</view> -->
+</view>
+
+<view class="serviceCard" bindtap="goServe" data-postId="2"><image src="/images/introduce.png" class="serviceCardImage"></image>
+<!-- <view class="serviceW">介绍朋友购车
+</view> -->
+</view>

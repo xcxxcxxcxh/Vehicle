@@ -1,0 +1,42 @@
+<!--pages/order/order.wxml-->
+<view class="container">
+<block wx:for="{{orderList}}" wx:if="{{orderList}}">
+  <view class="orderCard" data-detail="{{item}}" bindtap="goDetail">
+    <view class="orderTop">
+      <view class="orderTopL">{{item.orderTypeName}}</view>
+      <view class="orderTopM"></view>
+      <view class="orderTopR" class="{{item.orderStatus==3?'colorW':'colorWs'}}">{{(item.orderStatus==1||item.orderStatus==2)?"服务受理中":(item.orderStatus==3?"服务已完成":"")}}></view>
+
+    </view>
+    <view class="orderContent">
+      <text class="orderContent1">订单日期：</text>
+      <text class="orderContent2">{{item.createTime}}</text>
+    </view>
+    <view class="orderContent">
+      <text class="orderContent1">服务受理经销店：</text>
+      <text class="orderContent2">{{item.distributorName}}</text>
+    </view>
+     <view class="orderContent">
+      <text class="orderContent1">服务顾问姓名：</text>
+      <text class="orderContent2">{{item.saRealName}}</text>
+    </view>
+    <view class="orderBottom">
+      <text class="orderBottomL"></text>
+      <view class="bgLoginContent">
+        <van-button wx:if="{{item.evaluationStatus==0&&item.orderStatus==3}}" type="default" data-detail="{{item}}" size="small" catchtap="go" custom-class="bgLoginGo">评价有礼</van-button>
+         <van-button wx:elif="{{item.evaluationStatus==1}}" type="default" data-detail="{{item}}" size="small" catchtap="go2" custom-class="bgLoginGo">已评价</van-button>
+         <van-button wx:else type="default" size="small" catchtap="go" custom-class="bgLogin">评价有礼</van-button>
+      </view>
+    </view>
+
+  </view>
+</block>
+<view  wx:if="{{f&&orderList.length==0}}" class="a" >
+<view class="aaa">
+<image class="avatar" src="/images/post/cat.png"></image>
+<view class="aa">您还没有订单哦~</view></view>
+</view>
+
+<!-- <view  class="goService"></view> -->
+</view><van-button type="default" size="small" catchtap="goStart" custom-class="goServiceBtn">发起服务申请</van-button>
+<van-dialog id="van-dialog" />
